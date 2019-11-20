@@ -9,5 +9,6 @@ namespace BusinessLayer.Interface
     public interface IAccountBL
     {
         Task<string> RegisterUserAsync(UserModel model);
+        IList<UserModel> GetUser();
     }
 }

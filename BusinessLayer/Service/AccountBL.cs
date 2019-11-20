@@ -34,5 +34,17 @@ namespace BusinessLayer.Service
                 throw new Exception(ex.Message);
             }
         }
+
+        public IList<UserModel> GetUser()
+        {
+            try
+            {
+                return  this.account.GetUser();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

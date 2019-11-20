@@ -9,5 +9,6 @@ namespace RepositoryLayer.Interface
     public interface IAccountRL
     {
         Task<string> RegisterUserAsync(UserModel model);
+        IList<UserModel> GetUser();
     }
 }

@@ -28,7 +28,12 @@ namespace NewFundooApp.Controllers
             var result = await this.account.RegisterUserAsync(model);
             return Ok(new { result });
         }
-
+        [HttpGet]
+        public IActionResult GetUser()
+        {
+            var result =  this.account.GetUser();
+            return Ok(new { result });
+        }
 
     }
 }
